@@ -1,47 +1,37 @@
-EXPERIMENT - 14
-Prateek Sinha
-24070123077
-ENTC A3
-
 #include <iostream>
 using namespace std;
-// Base class 1
-class Vehicle {
+// Base class
+class LivingBeing{
 public:
-    string brand = "Ford";
-    void showColor() {
-        cout << "Color: Red\n";
+    void breathe(){
+        cout<<"All living beings breathe"<<endl;
     }
 };
-// Base class 2
-class Engine {
+// Derived from LivingBeing
+class Animal:public LivingBeing {
 public:
-    int horsepower = 450;
-    void showType() {
-        cout << "Engine Type: V8\n";
+    void eat(){
+        cout<<"Animals eat food"<<endl;
     }
 };
-// Derived class with multiple inheritance
-class Car : public Vehicle,public Engine {
+// Derived from Animal
+class Dog:public Animal {
 public:
-    string model = "Mustang";
-    int year = 2024;
+    void colour(){
+        cout<<"black"<<endl;
+    }
 };
 int main(){
-    Car myCar;
-    cout<<"Brand: "<<myCar.brand<<endl;
-    cout<<"Model: "<<myCar.model<<endl;
-    cout<<"Year: " << myCar.year<<endl;
-    cout<<"Horsepower: "<<myCar.horsepower<<endl;
-    myCar.showColor();
-    myCar.showType();
+    Dog myDog;
+    myDog.breathe();                              // From LivingBeing
+    myDog.eat();                                 // From Animal
+    cout<<"Dog colour"<<endl;
+    myDog.colour();                              // From Dog
     return 0;
 }
-/*Output:-
-Brand: Ford
-Model: Mustang
-Year: 2024
-Horsepower: 450
-Color: Red
-Engine Type: V8
+/*Output;-
+All living beings breathe
+Animals eat food
+Dog colour
+black
 */
