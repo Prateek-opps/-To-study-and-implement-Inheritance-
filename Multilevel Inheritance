@@ -1,3 +1,8 @@
+EXPERIMENT - 14
+Prateek Sinha
+24070123077
+ENTC A3
+
 #include <iostream>
 using namespace std;
 // Base class
@@ -29,7 +34,7 @@ int main(){
     myDog.colour();                              // From Dog
     return 0;
 }
-/*Output;-
+/*Output:-
 All living beings breathe
 Animals eat food
 Dog colour
