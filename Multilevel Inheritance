@@ -8,8 +8,8 @@ using namespace std;
 // Base class
 class LivingBeing{
 public:
-    void breathe(){
-        cout<<"All living beings breathe"<<endl;
+    void breed(){
+        cout<<"French Bulldog"<<endl;
     }
 };
 // Derived from LivingBeing
@@ -28,14 +28,14 @@ public:
 };
 int main(){
     Dog myDog;
-    myDog.breathe();                              // From LivingBeing
+    myDog.breed();                              // From Dog Breed
     myDog.eat();                                 // From Animal
     cout<<"Dog colour"<<endl;
     myDog.colour();                              // From Dog
     return 0;
 }
 /*Output:-
-All living beings breathe
+French Bulldog
 Animals eat food
 Dog colour
 black
