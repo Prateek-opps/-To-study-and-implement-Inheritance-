@@ -1,0 +1,32 @@
+EXPERIMENT - 14
+Prateek Sinha
+24070123077
+ENTC A3
+
+#include <iostream>
+using namespace std;
+// Base class
+class Person{
+public:
+    string name="Prateek Sinha";
+    void displayAge(){
+        cout<<"Age: 20\n";
+    }
+};
+// Derived class
+class Student:public Person {
+public:
+    int rollNo=24070123077;
+};
+int main(){
+    Student s1;
+    cout<<"Name: "<<s1.name<<endl;
+    cout<<"Roll No: "<<s1.rollNo<<endl;
+    s1.displayAge();
+    return 0;
+}
+/*Output:-
+Name: Prateek Sinha
+Roll No: -1699680699
+Age: 20
+*/
