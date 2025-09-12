@@ -1,6 +1,9 @@
 EXPERIMENT - 14
+
 Prateek Sinha
+
 24070123077
+
 ENTC A3
 
 # Inheritance in C++
